@@ -12,7 +12,7 @@ $(document).ready(function(){
   // Compile the template
   var theTemplate = Handlebars.compile(theTemplateScript);
 
-  var mydata = data[1];
+  var mydata = data;
 
   // Pass our data to the template
   var theCompiledHtml = theTemplate(mydata);
