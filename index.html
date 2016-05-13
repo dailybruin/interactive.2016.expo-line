@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expoline-2016</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="js/handlebars-v4.0.5.js"></script>
+  <script type="text/javascript" src="data/data.json"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <h1>Expoline :D</h1>
+  <!--Your new content will be displayed in here-->
+  <div class="content-placeholder"></div>
+
+  <!--This is our template. -->
+  <!--Data will be inserted in its according place, replacing the brackets.-->
+  <script id="data-template" type="text/x-handlebars-template">
+    <h2>TEST CONTENT PARSED FROM DAILY BRUIN SITE</h2>
+    <p>
+    Headline: {{headline}}
+    <br />
+    Authors: {{authors}}
+    <br />
+    Postdate: {{postDate}}
+    <br />
+    Images: <img src="{{images}}" />
+    <br />
+    Caption: {{caption}}
+    <br />
+    Story content: {{{content}}}
+    <br />
+    URL source: {{url}}
+    </p>
+  </script>
+</body>
+</html>
