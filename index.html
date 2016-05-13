@@ -20,20 +20,21 @@
   <script id="data-template" type="text/x-handlebars-template">
   {{#each .}}
     <h2>TEST CONTENT PARSED FROM DAILY BRUIN SITE</h2>
+    <h1>============================================================================================</h1>
     <p>
-    Headline: {{headline}}
+    <b>Headline: </b>{{headline}}
     <br />
-    Authors: {{authors}}
+    <b>By: </b>{{authors}}
     <br />
-    Postdate: {{postDate}}
+    <b>Posted on: </b>{{postDate}}
     <br />
-    Images: <img src="{{images}}" />
+    <b>Image: </b><img src="{{titleImage}}" />
     <br />
-    Caption: {{caption}}
+    <b>Caption: </b>{{titleCaption}}
     <br />
-    Story content: {{{content}}}
+    <b>Story Content: </b>{{{content}}}
     <br />
-    URL source: {{url}}
+    <b>URL source: </b>{{url}}
     </p>
   {{/each}}
   </script>
