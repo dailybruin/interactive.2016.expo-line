@@ -1,10 +1,22 @@
-function makeString(object) {
-  if (object == null)
-    return '';
-  return String(object);
-};
-
 $(document).ready(function(){
+
+  $(".nav a").click(function() {
+      event.preventDefault();
+      var href = $(this).attr('href');
+      $('html, body').animate({
+          scrollTop: $(href).offset().top
+      }, 600, function(){
+        window.location.hash = href;
+      });
+  });
+
+  $(".line-1").fadeIn(1500, afterFade1).removeClass('hidden');
+  function afterFade1() {
+    $(".line-2").fadeIn(1200, afterFade2).removeClass('hidden');
+  }
+  function afterFade2() {
+    $(".line-3").fadeIn(1200).removeClass('hidden');
+  }
 
   // Grab the template script
   var theTemplateScript = $("#data-template").html();
@@ -17,8 +29,11 @@ $(document).ready(function(){
   // Pass our data to the template
   var theCompiledHtml = theTemplate(mydata);
 
-  console.log(theCompiledHtml);
   // Add the compiled html to the page
   $('.content-placeholder').html(theCompiledHtml);
 
+});
+
+Handlebars.registerHelper("counter", function (index){
+    return index + 1;
 });
