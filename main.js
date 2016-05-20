@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
-  $(".nav a").click(function() {
+  $(".nav a").click(function(event) {
       event.preventDefault();
       var href = $(this).attr('href');
       $('html, body').animate({
           scrollTop: $(href).offset().top
       }, 600, function(){
-        window.location.hash = href;
+        window.location.href = href;
       });
   });
 

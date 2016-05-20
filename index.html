@@ -45,7 +45,7 @@
   </div>
 
 
-  <!--<div class="content-placeholder"></div>-->
+  <!-- <div class="content-placeholder"></div>-->
 
   <!--Your new content will be displayed in here-->
 
@@ -54,9 +54,13 @@
   <!--Data will be inserted in its according place, replacing the brackets.-->
   <script id="data-template" type="text/x-handlebars-template">
   {{#each .}}
-    <div class="tab-pane active" id="section{{counter @index}}">
-      <p>
-      <b>Headline: </b>{{headline}}
+  <div class="container-fluid">
+    <div class="row active" id="section{{counter @index}}">
+      <div class="story-title">
+        <p>
+          {{headline}}
+        </p>
+      </div>
       <br />
       <b>By: </b>{{authors}}
       <br />
@@ -71,6 +75,7 @@
       <b>URL source: </b>{{url}}
       </p>
     </div>
+  </div>
   {{/each}}
   </script>
   <script src="js/bootstrap.min.js"></script>
