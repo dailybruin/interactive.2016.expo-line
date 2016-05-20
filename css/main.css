@@ -5,32 +5,33 @@ html, body {
 
 .front{
   font-family: 'Oswald', sans-serif;
-  text-align: center;
-  font-size: 10em;
   color: white;
-  background: url(../img/expoline-front1.jpg) no-repeat center center fixed;
+  background: url(../img/expoline-front2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 7em;
+  height: 70em;
 
+}
+
+.title{
+  color: white;
+  float: left;
 }
 
 .line-1{
-  margin-top: 7.5%;
-  color: black;
+  font-size: 10em;
 }
 
 .line-2{
-  margin-top: 2.5%;
-  color:black;
+  padding-top: 375px;
+  font-size: 10em;
 }
 
 .line-3{
-  color: black;
-  margin-top: 6.5%;
-  font-size: .2em;
+  padding-top: 20px;
+  font-size: 2em;
 }
 
 .hidden{
@@ -38,6 +39,10 @@ html, body {
 }
 
 /* content */
+.main-image{
+  width:100%;
+}
+
 .content{
   font-family: 'Droid Serif', serif;
   line-height: 240%;
