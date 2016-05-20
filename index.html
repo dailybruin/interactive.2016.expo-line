@@ -12,6 +12,7 @@
   <script type="text/javascript" src="data/data.json"></script>
   <script type="text/javascript" src="main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
   <div class="container-fluid">
@@ -24,15 +25,15 @@
           Expoline | 2016
         </div>
         <div class="line-3 hidden">
-          Content by News, Opinion, and A&amp;E
+          LA County Metropolitan Transportation Authority opens Expo line light-rail extension
         </div>
       </div>
     </div>
     <div class="row tabbable">
       <div class="col-xs-3 col-xs-push-9" id="myScrollspy">
-          <ul class="nav nav-tabs nav-stacked" data-offset-top="930" data-spy="affix">
-              <li class="active"><a href="#section1">Section One</a></li>
-              <li><a href="#section2">Section Two</a></li>
+          <ul class="nav nav-tabs nav-stacked" data-offset-top="960" data-spy="affix">
+              <li class="active"><a href="#section1"><b>News:</b> Metro Expo extension opens, connects downtown LA to Santa Monica</a></li>
+              <li><a href="#section2"><b>Opinon:</b> Chris Campbell: LA needs reliable public transportation, not emphasis on rail lines</a></li>
               <li><a href="#section3">Section Three</a></li>
               <li><a href="#section4">Section Four</a></li>
               <li><a href="#section5">Section Five</a></li>
@@ -44,36 +45,31 @@
   </div>
   </div>
 
-
-  <!-- <div class="content-placeholder"></div>-->
-
-  <!--Your new content will be displayed in here-->
-
-
   <!--This is our template. -->
   <!--Data will be inserted in its according place, replacing the brackets.-->
   <script id="data-template" type="text/x-handlebars-template">
   {{#each .}}
-  <div class="container-fluid">
+  <div class="container-fluid content">
     <div class="row active" id="section{{counter @index}}">
       <div class="story-title">
         <p>
           {{headline}}
         </p>
       </div>
-      <br />
-      <b>By: </b>{{authors}}
-      <br />
-      <b>Posted on: </b>{{postDate}}
-      <br />
-      <b>Image: </b><img class="main-title" src="{{titleImage}}" />
-      <br />
-      <b>Caption: </b>{{titleCaption}}
-      <br />
-      <b>Story Content: </b>{{{content}}}
-      <br />
-      <b>URL source: </b>{{url}}
-      </p>
+      <div class="by-line">
+        <p>
+        By: {{authors}}
+        </p>
+      </div>
+      <img class="post-main-pic" src="{{titleImage}}" />
+      <div class="post-main-pic-caption">
+        <p>
+          {{titleCaption}}
+        </p>
+      </div>
+      <div class="post-content">
+        {{{content}}}
+      </div>
     </div>
   </div>
   {{/each}}

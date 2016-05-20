@@ -8,37 +8,69 @@ html, body {
   text-align: center;
   font-size: 10em;
   color: white;
-  background: url(../img/front.jpg) no-repeat center center fixed;
+  background: url(../img/expoline-front1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 6.9em;
+  height: 7em;
 
 }
 
-.line-3{
-  font-size: .4em;
-  padding-top: 20%;
+.line-1{
+  margin-top: 7.5%;
+  color: black;
+}
 
+.line-2{
+  margin-top: 2.5%;
+  color:black;
+}
+
+.line-3{
+  color: black;
+  margin-top: 6.5%;
+  font-size: .2em;
 }
 
 .hidden{
   display:none;
 }
 
-.nav-pills{
-  font-size: 2em;
-}
-
-.main-title{
-  width: 100%;
-}
-
 /* content */
+.content{
+  font-family: 'Droid Serif', serif;
+  line-height: 240%;
+}
+
 .story-title{
-  padding: 1% 0%;
+  color: rgb(0 ,86, 154);
+  margin: 0 15%;
+  padding-top: 2%;
   font-size: 3em;
+  line-height: 1.25em;
+}
+
+.by-line{
+  font-size: 1.75em;
+  margin: 0 15%;
+}
+
+.post-main-pic{
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
+.post-main-pic-caption{
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 0 15%;
+}
+
+.post-content{
+  font-size: 1.25em;
+  margin: 2.5% 17.5%;
 }
 
 /*scrollspy*/
@@ -46,23 +78,27 @@ body{
 	position: relative; /* required */
 }
 
+.nav-pills{
+  font-size: 2em;
+}
+
 ul.nav-tabs {
+  margin-left: 15px;
   width: 20em;
+  height: 26.2em;
   font-size: 1.5em;
 	margin-top: 20px;
-	border-radius: 4px;
-    background: #fff;
-    z-index: 999;
-	border: 1px solid #ddd;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+	border-left: 1px solid #ddd;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.077);
 }
 
 ul.nav-tabs li {
 	margin: 0;
-	border-top: 1px solid #ddd;
+	border-top: 3px solid #ddd;
 }
 
 ul.nav-tabs li a {
+  height: 5em;
   color: black;
 	margin: 0;
 	padding: 8px 16px;

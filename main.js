@@ -12,10 +12,10 @@ $(document).ready(function(){
 
   $(".line-1").fadeIn(1500, afterFade1).removeClass('hidden');
   function afterFade1() {
-    $(".line-2").fadeIn(1200, afterFade2).removeClass('hidden');
+    $(".line-2").fadeIn(1000, afterFade2).removeClass('hidden');
   }
   function afterFade2() {
-    $(".line-3").fadeIn(1200).removeClass('hidden');
+    $(".line-3").fadeIn(1000).removeClass('hidden');
   }
 
   // Grab the template script
