@@ -8,7 +8,7 @@
   .front{
     font-family: 'Oswald', sans-serif;
     color: white;
-    background: url(../img/expoline-front2.jpg) no-repeat center center fixed;
+    background: url("http://dailybruin.com/images/2016/05/web.ns_.metro_.cc.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -23,16 +23,17 @@
   }
 
   .line-1{
+    padding-top: 420px;
     font-size: 10em;
   }
 
   .line-2{
-    padding-top: 375px;
+    padding-top: 5px;
     font-size: 10em;
   }
 
   .line-3{
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 2em;
   }
 
@@ -159,7 +160,7 @@
   .front{
     font-family: 'Oswald', sans-serif;
     color: white;
-    background: url(../img/expoline-front2.jpg) no-repeat center center fixed;
+    background: url("http://dailybruin.com/images/2016/05/web.ns_.metro_.cc.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -300,7 +301,7 @@
   .front{
     font-family: 'Oswald', sans-serif;
     color: white;
-    background: url(../img/expoline-front2.jpg) no-repeat center center fixed;
+    background: url("http://dailybruin.com/images/2016/05/web.ns_.metro_.cc.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -447,10 +448,17 @@
 .A-E{
   margin: 0;
   padding: 2%;
+  font-size: 2em;
 }
 
 footer{
   font-size: 1.2em;
   margin: 5%;
   text-align: center;
+}
+
+.getting-expo{
+  display: block;
+  margin: auto;
+  width: 100%;
 }
