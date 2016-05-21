@@ -345,8 +345,11 @@
   .story-title{
     color: rgb(0 ,86, 154);
     padding-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
     font-size: 3em;
     line-height: 1.25em;
+    text-align: center
   }
 
   .by-line{
