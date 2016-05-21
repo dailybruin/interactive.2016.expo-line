@@ -144,3 +144,35 @@ ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
 ul.nav-tabs.affix {
 	top: 0px; /* set the top position of pinned element */
 }
+
+@media screen and (min-width: 320px) {
+    html {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    .front {
+   
+      background: url(../img/expoline-front2.jpg) no-repeat;
+    }
+
+    .title {
+      font-size: 0.5px;
+    }
+
+    .line-1 {
+      padding-top: 3px;
+    }
+
+    .line-2 {
+      padding-top: 3px;
+    }
+
+    .line-3 {
+      padding-top: 3px;
+      font-size: 3px;
+    }
+
+    body {
+      font-size: 2px;
+    }
+}
